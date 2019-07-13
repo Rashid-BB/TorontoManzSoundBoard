@@ -1,18 +1,27 @@
 ﻿using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 namespace SoundBoard
 {
     public partial class App : Application
     {
+        public static string FolderPath { get; set; }
+
+        public string myName = "Rashid";
+
         public App()
         {
             InitializeComponent();
+            FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
+            //MainPage = new NavigationPage(new NotesPage());
+            MainPage = new NavigationPage(new MainPage());
 
-            MainPage = new MainPage();
         }
 
+        
         protected override void OnStart()
         {
             // Handle when your app starts
@@ -27,5 +36,6 @@ namespace SoundBoard
         {
             // Handle when your app resumes
         }
+        
     }
 }
