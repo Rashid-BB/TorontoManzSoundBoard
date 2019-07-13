@@ -7,15 +7,33 @@
              x:Class="SoundBoard.MainPage">
     <ContentPage.Content>
         <StackLayout Margin="20,35,20,25">
-            <Label Text="Nyeaaaah EH"
-           VerticalOptions="FillAndExpand"
-           BackgroundColor="Gray" />
-            <Label Text="Manz Dunno"
-           VerticalOptions="FillAndExpand"
-           BackgroundColor="Gray" />
-            <Label Text="Badtri Tingggg"
-           VerticalOptions="FillAndExpand"
-           BackgroundColor="Gray" />
+            <Label Text="Toronto Manz SoundBoard"
+                   HorizontalOptions="Center"
+                   TextColor="Blue"
+                   FontSize="Large"
+                   FontAttributes="Italic"
+                   TextDecorations="Underline"/>
+            <Button Text="Nyeaaaah EH"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="FillAndExpand"
+                   BackgroundColor="Gray" 
+                   Clicked="Button_Clicked"/>
+            <Button Text="Manz Dunno"
+                   VerticalOptions="FillAndExpand"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   BackgroundColor="Gray" 
+                    Clicked="Button_Clicked_1"/>
+            <Button Text="Badtri Tingggg"
+                   VerticalOptions="FillAndExpand"
+                   TextColor="Black"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   BackgroundColor="Gray" 
+                   Clicked="Button_Clicked_2"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

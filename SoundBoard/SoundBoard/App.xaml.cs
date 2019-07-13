@@ -17,7 +17,9 @@ namespace SoundBoard
             InitializeComponent();
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
             //MainPage = new NavigationPage(new NotesPage());
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new LabelsTutorial());
+            MainPage = new NavigationPage(new ButtonsTutorial());
 
         }
 
